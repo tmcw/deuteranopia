@@ -10,6 +10,7 @@ body {
     max-width:518px;
     margin:40px auto;
     font:normal 14px/20px 'Georgia', serif;
+    color:#333;
 }
 h1 {
     text-align:center;
@@ -17,7 +18,9 @@ h1 {
     font-size:30px;
     font-weight:normal;
 }
+p, pre { text-align:center; }
 canvas {
+    margin-top:20px;
     width:518px;
     height:259px;
 }
@@ -25,6 +28,9 @@ canvas {
     </head>
     <body>
         <h1>deuteranopia</h1>
+        <p>a <a href='https://github.com/tmcw/deuteranopia'>javascript library for simulating colorblindness.</a></p>
+        <pre>npm install deuteranopia</pre>
+        <pre>var simulation = deuteranopia(r, g, b)</pre>
         <script src='index.js'></script>
         <script>
         var plate = new Image();
