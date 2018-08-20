@@ -1,5 +1,7 @@
 ## deuteranopia
 
+[![CircleCI](https://circleci.com/gh/tmcw/deuteranopia.svg?style=svg)](https://circleci.com/gh/tmcw/deuteranopia)
+
 ![](plate.jpg)
 
 Simulate the prevalent deuteranopia form of colorblindness.
