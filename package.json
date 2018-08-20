@@ -2,13 +2,22 @@
   "name": "deuteranopia",
   "version": "0.0.0",
   "description": "simulate deuteranopia, the most common form of colorblindness",
-  "main": "index.js",
+  "source": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "main:umd": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "microbundle && tape test/*.js",
+    "release": "microbundle && standard-version",
+    "doc": "documentation readme -s API index.js"
   },
-  "repo": {
-      "type": "git",
-      "url": "https://github.com/tmcw/deuteranopia.git"
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tmcw/deuteranopia.git"
   },
   "keywords": [
     "colorblindness",
@@ -16,9 +25,11 @@
     "color"
   ],
   "author": "Tom MacWright",
-  "license": "BSD",
+  "license": "BSD-3-Clause",
   "devDependencies": {
-    "expect.js": "~0.2.0",
-    "mocha": "~1.12.0"
+    "documentation": "^8.1.1",
+    "microbundle": "^0.6.0",
+    "standard-version": "^4.4.0",
+    "tape": "^4.9.1"
   }
 }
