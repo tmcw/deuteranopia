@@ -1,6 +1,6 @@
 {
   "name": "deuteranopia",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "simulate deuteranopia, the most common form of colorblindness",
   "source": "index.js",
   "main": "dist/index.js",
