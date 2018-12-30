@@ -5,7 +5,7 @@
   "source": "index.js",
   "main": "dist/index.js",
   "module": "dist/index.m.js",
-  "main:umd": "dist/index.umd.js",
+  "umd:main": "dist/index.umd.js",
   "unpkg": "dist/index.umd.js",
   "scripts": {
     "test": "microbundle && tape test/*.js",
